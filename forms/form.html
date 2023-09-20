@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+</head>
+
+<body>
+  <form action="">
+    <div id="fname">
+      <label for="fname">First Name: </label>
+      <input type="text" name="fname" id="fname" required />
+    </div>
+
+    <div id="lname">
+      <label for="lname">Last Name: </label>
+      <input type="text" name="lname" id="lname" required />
+    </div>
+
+    <div id="email">
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" required />
+    </div>
+
+    <div id="password">
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" required />
+    </div>
+
+    <fieldset style="width: 200px">
+      <legend>Delivery Address:</legend>
+      <div id="street">
+        <label for="street">Street</label>
+        <input type="text" required />
+      </div>
+
+      <div id="housem">
+        <label for="housem">House number</label>
+        <input type="number" required />
+      </div>
+
+      <div id="city">
+        <label for="city">City</label> <br />
+        <select name="city" id="city" required>
+          <option value="Kaunas">Kaunas</option>
+          <option value="Klaipeda">Klaipeda</option>
+          <option value="Vilnius">Vilnius</option>
+          <option value="Utena">Utena</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset style="width: 200px">
+      <legend>Select payment method:</legend>
+
+      <div>
+        <input type="radio" id="card" name="payment" value="card" checked required />
+        <label for="card">Card</label>
+      </div>
+
+      <div>
+        <input type="radio" id="obank" name="payment" value="obank" required />
+        <label for="obank">Online banking</label>
+      </div>
+
+      <div>
+        <input type="radio" id="paypal" name="payment" value="paypal" required />
+        <label for="paypal">Paypal</label>
+      </div>
+    </fieldset>
+
+    <fieldset style="width: 200px">
+      <legend>Choose gifts:</legend>
+      <div>
+        <input type="checkbox" id="phonec" name="phonec" checked />
+        <label for="phonec">Phone case</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="cup" name="cup" />
+        <label for="cup">Mug with logo</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="tote" name="tote" />
+        <label for="tote">Tote bag</label>
+      </div>
+    </fieldset>
+
+    <div>
+      <label for="comment">Comments for Order</label> <br />
+      <textarea name="comment"></textarea>
+    </div>
+
+    <div>
+      <input type="submit" name="order" value="Order" />
+      <label for="order"></label>
+    </div>
+    
+  </form>
+</body>
+
+</html>
